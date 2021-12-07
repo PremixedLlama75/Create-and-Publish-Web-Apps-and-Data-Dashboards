@@ -9,10 +9,14 @@ data = {
 
 df = pandas.DataFrame(data)
 
-st.title('Our First Streamlit App')
+st.title('Gael Mendez Portfolio')
 st.subheader('Introducing Streamlit in Automate Everything with Python')
 st.write('''This is our first Web App.
 Enjoy it!
 ''')
 st.write(df)
 st.line_chart(df)
+st.area_chart(df)
+
+myslider = st.slider('Celsius')
+st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
